@@ -1,0 +1,43 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:composter"
+      },
+      "title": "Half-pots!",
+      "description": "§aYou can place plants also on half-pots. Crouch-place a Composter or Cauldron to make them half-pots. Hold in offhand to place the upper variant.",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gurkis:usefulerpots",
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:placed_block",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_sneaking": true
+                },
+                "equipment": {
+                  "mainhand": {
+                    "items": [
+                      "minecraft:cauldron",
+                      "minecraft:composter"
+                    ]
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "sends_telemetry_event": false,
+    "rewards": {
+      "function": "bacap_rewards:gurkis/halfpot"
+    }
+  }

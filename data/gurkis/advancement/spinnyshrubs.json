@@ -1,0 +1,48 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:debug_stick"
+      },
+      "title": "Spinny Shrubs",
+      "description": "§aHold a stick and crouch on top of a plant placed by this datapack to rotate it!",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gurkis:plantmaster",
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:tick",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "flags": {
+                    "is_sneaking": true
+                  },
+                  "stepping_on": {
+                    "block": {
+                      "blocks": "#gardenersdream:all_pots"
+                    }
+                  },
+                  "equipment": {
+                    "mainhand": {
+                      "items": [
+                        "minecraft:stick"
+                      ]
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+    "sends_telemetry_event": false,
+    "rewards": {
+      "function": "bacap_rewards:gurkis/spinnyshrubs"
+    }
+  }
+  

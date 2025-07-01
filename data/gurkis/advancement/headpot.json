@@ -1,0 +1,33 @@
+{
+    "display": {
+      "icon": {
+      "id": "minecraft:player_head",
+      "components": {
+        "minecraft:profile": {
+        "id": [-1069760934, -603502470, -1263067513, -97463415],
+        "properties": [
+          {
+            "name": "textures",
+            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWY0NTA1NWZhNjQ4Y2RiYjJjNjIwYmE1NjUwYjI5ZWMwM2MwMzAyNmJhNGZhODhhZmYwNTUyOTc0NzM3YjJiNyJ9fX0="
+          }
+        ]
+       }
+      }
+    },
+      "title": "Head-pots!",
+      "description": "§aYou can also place plants on player heads! Get custom pot design heads by putting a flower pot inside a Stonecutter!",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gurkis:plantmaster",
+    "criteria": {
+      "condition": {
+        "trigger": "minecraft:impossible"
+      }
+    },
+    "sends_telemetry_event": false,
+    "rewards": {
+      "function": "bacap_rewards:gurkis/headpot"
+    }
+  }

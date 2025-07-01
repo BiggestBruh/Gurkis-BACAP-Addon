@@ -1,0 +1,45 @@
+{
+    "display": {
+      "icon": {
+        "id": "minecraft:flower_pot"
+      },
+      "title": "Plant Master!",
+      "description": "§aCrouch on top of a flower pot to place your held plant into it, works with basically all plants!",
+      "show_toast": true,
+      "announce_to_chat": true,
+      "hidden": false
+    },
+    "parent": "gurkis:gardenersdream",
+    "criteria": {
+        "requirement": {
+          "trigger": "minecraft:tick",
+          "conditions": {
+            "player": [
+              {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "flags": {
+                    "is_sneaking": true
+                  },
+                  "stepping_on": {
+                    "block": {
+                      "blocks": "#gardenersdream:all_pots"
+                    }
+                  },
+                  "equipment": {
+                    "mainhand": {
+                      "items": "#gardenersdream:pot_plants"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+    "rewards": {
+      "function": "bacap_rewards:gurkis/plantmaster"
+    },
+    "sends_telemetry_event": false
+  }
