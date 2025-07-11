@@ -108,6 +108,4 @@ execute if score coop bac_settings matches 2 if entity @s[team=bac_team_light_pu
 execute if score coop bac_settings matches 2 if entity @s[team=bac_team_yellow] run advancement grant @a[team=bac_team_yellow] only gurkis:plantmaster
 execute if score coop bac_settings matches 2 if entity @s[team=bac_team_white] run advancement grant @a[team=bac_team_white] only gurkis:plantmaster
 
-function gardenersdream:first_advancement
-
 function #bacap_fanpacks:gurkis/plantmaster

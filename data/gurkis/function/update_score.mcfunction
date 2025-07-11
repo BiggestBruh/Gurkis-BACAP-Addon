@@ -1,9 +1,6 @@
 # Gurkis datapack advancements
-execute as @a[advancements={gurkis:bannerbedsheets=true}] run scoreboard players add @s bac_advancements 1
-execute as @a[advancements={gurkis:bannerflags=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:endlanding=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:flipit=true}] run scoreboard players add @s bac_advancements 1
-execute as @a[advancements={gurkis:gardenersdream=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:halfpot=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:halfpotsoil=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:headpot=true}] run scoreboard players add @s bac_advancements 1
@@ -14,7 +11,6 @@ execute as @a[advancements={gurkis:newsheets=true}] run scoreboard players add @
 execute as @a[advancements={gurkis:onetall=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:otherpots=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:plantmaster=true}] run scoreboard players add @s bac_advancements 1
-execute as @a[advancements={gurkis:root=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:spinnyshrubs=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:theflagisup=true}] run scoreboard players add @s bac_advancements 1
 execute as @a[advancements={gurkis:usefulerpots=true}] run scoreboard players add @s bac_advancements 1
